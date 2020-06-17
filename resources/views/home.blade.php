@@ -19,7 +19,7 @@
 
 
   <!-- Custom styles  -->
-  <link href="css/styles.css" rel="stylesheet">
+  <link href="{{asset('frontend')}}/css/styles.css" rel="stylesheet">
 
 
 </head>
@@ -27,7 +27,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="heart navbar-brand" href="#"> <h2>Beatnik </h2>   </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -192,13 +192,13 @@
                         </ol>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="img/tab.jpg" class="d-block w-100" alt="...">
+                            <img src="{{asset('frontend') }}/img/tab.jpg" class="d-block w-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="img/tab.jpg" class="d-block w-100" alt="...">
+                            <img src="{{asset('frontend') }}/img/tab.jpg" class="d-block w-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="img/tab.jpg" class="d-block w-100" alt="...">
+                            <img src="{{asset('frontend') }}/img/tab.jpg" class="d-block w-100" alt="...">
                           </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -245,11 +245,11 @@
                   <!-- Flickity HTML init -->
                   <div class="gallery js-flickity"
                       data-flickity-options='{ "wrapAround": true }'>
-                      <div class=""><img class="img" width="400px" src="img/sham1.jpg" alt="Picture 1"> </div>
-                      <div class=""><img class="img" width="400px" src="img/gel.jpg" alt="Picture 2"> </div>
-                      <div class=""><img class="img"width="400px"  src="img/gel2.jpg" alt="Picture 3"> </div>
-                      <div class=""><img class="img" width="400px" src="img/sham1.jpg" alt="Picture 4"> </div>
-                      <div class=""><img class="img" width="400px" src="img/gel.jpg" alt="Picture 5"> </div>
+                      <div class=""><img class="img" width="400px" src="{{asset('frontend') }}/img/sham1.jpg" alt="Picture 1"> </div>
+                      <div class=""><img class="img" width="400px" src="{{asset('frontend') }}/img/gel.jpg" alt="Picture 2"> </div>
+                      <div class=""><img class="img"width="400px"  src="{{asset('frontend') }}/img/gel2.jpg" alt="Picture 3"> </div>
+                      <div class=""><img class="img" width="400px" src="{{asset('frontend') }}/img/sham1.jpg" alt="Picture 4"> </div>
+                      <div class=""><img class="img" width="400px" src="{{asset('frontend') }}/img/gel.jpg" alt="Picture 5"> </div>
 
                       <!-- <div class="gallery-cell"></div> -->
                   </div>
@@ -269,7 +269,7 @@
                 <div class="card-group">
 
                   <div class="news_card card" >
-                    <img  class="rounded card-img-top" src="img/sky.jpg" alt="Card image cap">
+                    <img  class="rounded card-img-top" src="{{asset('frontend') }}/img/sky.jpg" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">This is a wider card with </p>
@@ -277,7 +277,7 @@
                     </div>
                   </div>
                   <div class="news_card card">
-                    <img class="rounded card-img-top" src="img/wal.jpg" alt="Card image cap">
+                    <img class="rounded card-img-top" src="{{asset('frontend') }}/img/wal.jpg" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -287,20 +287,20 @@
                   <div class="news_card card">
 
                     <div class="inner_card  row">
-                      <div class=" col-4"><img class="rounded card-img-top" src="img/wal.jpg" alt="Card image cap">  </div>
+                      <div class=" col-4"><img class="rounded card-img-top" src="{{asset('frontend') }}/img/wal.jpg" alt="Card image cap">  </div>
                       <div class="col-8">New premium rate hase been introduced</div>
                       <hr class="m-2">
                       
                     </div>
 
                     <div class="inner_card row">
-                      <div class="col-4"><img class="rounded card-img-top" src="img/wal.jpg" alt="Card image cap"> </div>
+                      <div class="col-4"><img class="rounded card-img-top" src="{{asset('frontend') }}/img/wal.jpg" alt="Card image cap"> </div>
                       <div class="col-8">New premium rate hase been introduced</div>
                       <hr class="m-2">
                       
                     </div>
                     <div class="inner_card row">
-                      <div class="col-4"><img class="rounded card-img-top" src="img/wal.jpg" alt="Card image cap"></div>
+                      <div class="col-4"><img class="rounded card-img-top" src="{{asset('frontend') }}/img/wal.jpg" alt="Card image cap"></div>
                       <div class="col-8">New premium rate hase been introduced</div>
                       <hr class="m-2">
                       
@@ -608,7 +608,7 @@
 
                     <div class="col-sm mb-2">
                       <p class="contact_text" >Experience the mobile app </p> 
-                      <img  style="width: 40%;" src="img/google.png" alt="">
+                      <img  style="width: 40%;" src="{{asset('frontend') }}/img/google.png" alt="">
                     </div>
                     <div class="col-sm">
                     <p class="contact_text" >For any help you may call us at <br> +9444521-526-564 </p>
@@ -630,14 +630,14 @@
 
                 <div class=" foot_product row ">
                   <div class="col-sm mb-3 "> 
-                  <img  style="width: 20%;" src="img/tag.png" alt="">  
+                  <img  style="width: 20%;" src="{{asset('frontend') }}/img/tag.png" alt="">  
                   </div>
                   <div class="col-sm mb-3">
-                    <img  style="width: 20%;" src="img/product.png" alt="">  
+                    <img  style="width: 20%;" src="{{asset('frontend') }}/img/product.png" alt="">  
 
                   </div>
                   <div class="col-sm mb-3">
-                    <img  style="width: 25%;" src="img/shipping.png" alt="">  
+                    <img  style="width: 25%;" src="{{asset('frontend') }}/img/shipping.png" alt="">  
 
                   </div>
                   <div class="col-sm">  
@@ -654,7 +654,7 @@
 
 
                 <div class=" foot_loc  "> 
-                  <a href="#" target="_blank" class="btn btn-outline-danger  " role="button" aria-disabled="true">Back to top </a>
+                  <a href="#"  class="btn btn-outline-danger  " role="button" aria-disabled="true">Back to top </a>
                   <p > Store Location </p> 
                   
 
@@ -685,7 +685,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" ></script>
 
     <!-- my js file -->
-    <script src="js/app.js">  </script>
+    <script src="{{asset('frontend') }}/js/app.js">  </script>
 
 
 
